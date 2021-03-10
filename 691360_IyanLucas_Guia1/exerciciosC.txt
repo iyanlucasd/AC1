@@ -1,0 +1,162 @@
+/*
+iyan lucas duarte marques
+matrícula: 691360
+*/
+
+
+
+/*
+Guia_0101.
+*/
+module Guia_0101;
+// define data
+integer x = 23; // decimal
+integer y = 54; // decimal
+integer z = 731; // decimal
+integer alpha = 132; // decimal
+integer beta = 23; // decimal
+reg [7:0] b = 0; // binary
+// actions
+initial
+begin : main
+$display ( "Guia_0101 - Tests" );
+$display ( "x = %d" , x );
+$display ( "y = %d" , y );
+$display ( "z = %d" , z );
+$display ( "alpha = %d" , alpha );
+$display ( "beta = %d" , beta );
+$display ( "---------------------");
+b = x;
+$display ( "b(x) = %8b", b );
+b = y;
+$display ( "b(y) = %8b", b );
+b = z;
+$display ( "b(z) = %8b", b );
+b = alpha;
+$display ( "b(alpha) = %8b", b );
+b = beta;
+$display ( "b(beta) = %8b", b );
+end // main
+endmodule // Guia_0101
+
+-----------------------------------------------------------
+/*
+Guia_0102.
+*/
+module Guia_0102;
+// define data
+integer x = 0;
+integer y = 0; // decimal
+integer z = 0; // decimal
+integer alpha = 0; // decimal
+integer beta = 0; // decimal
+// decimal
+reg [7:0] b = 8'b0010101; // binary (bits)
+// actions
+initial
+begin : main
+$display ( "Guia_0102 - Tests" );
+$display ( "b = %8b", b );
+x = b;
+$display ( "x = %d", x );
+b = 8'b0010110;
+y = b;
+$display ( "y = %d", y );
+b = 8'b0101101;
+z = b;
+$display ( "z = %d", z );
+b = 8'b0111011;
+alpha = b;
+$display ( "alpha = %d", alpha );
+b = 8'b0111001;
+beta = b;
+$display ( "beta = %d", beta );
+
+end // main
+endmodule // Guia_0102
+
+-----------------------------------------------
+
+/*
+Guia_0103
+*/
+module Guia_0103;
+// define data
+integer x = 71;
+integer y = 43; // decimal
+integer z = 67; // decimal
+integer alpha = 175; // decimal
+integer beta = 151; // decimal
+reg [7:0] b = 0; // binary
+// actions
+initial
+begin : main
+$display ( "Guia_0103 - Tests" );
+b = x;
+$display ( "b = %B (2) = %o (8) = %d (10) = %h (16)", b, b, b, b );
+b = y;
+$display ( "b = %B (2) = %o (8) = %d (10) = %h (16)", b, b, b, b );
+b = z;
+$display ( "b = %B (2) = %o (8) = %d (10) = %h (16)", b, b, b, b );
+b = alpha;
+$display ( "b = %B (2) = %o (8) = %d (10) = %h (16)", b, b, b, b );
+b = beta;
+$display ( "b = %B (2) = %o (8) = %d (10) = %h (16)", b, b, b, b );
+end // main
+endmodule // Guia_0103
+
+----------------------------------------------------------------
+
+/*
+Guia_0104
+*/
+module Guia_0104;
+// define data
+integer x = 13; // decimal
+reg [7:0] b = 0; // binary
+// actions
+initial
+begin : main
+$display ( "Guia_0104 - Tests" );
+$display ( "x = %d" , x );
+$display ( "b = %8b", b );
+b = 8'b0010101;
+$display ( "b = [%4b] [%4b] = %o", b[7:4], b[3:0], b[7:0]);
+b = 8'b0010011;
+$display ( "b = [%4b] [%4b] = %o", b[7:4], b[3:0], b[7:0]);
+b = 8'b0101101;
+$display ( "b = [%4b] [%4b] = %x", b[7:4], b[3:0], b[7:0]);
+b = 8'b0100101;
+$display ( "b = [%4b] [%4b] = %o", b[7:4], b[3:0], b[7:0]);
+b = 8'b0101111;
+$display ( "b = [%4b] [%4b] = %o", b[7:4], b[3:0], b[7:0]);
+end // main
+endmodule // Guia_0104
+
+----------------------------------------------------
+
+/*
+Guia_0105
+*/
+module Guia_0105;
+// define data
+integer x = 13; // decimal
+reg [7:0] b
+; // binary
+reg [0:2][7:0] s = "PUC"; // 3 characters (8 bits)
+// actions
+initial
+begin : main
+$display ( "Guia_0105 - Tests" );
+$display ( "x = %d" , x );
+$display ( "b = %8b", b );
+$display ( "s = %s" , s );
+b = x;
+$display ( "b = [%4b] [%4b] = %h %h", b[7:4], b[3:0], b[7:4], b[3:0] );
+s[0] = "-";
+s[1] = 8'b01001101; // 'M'
+s[2] = 71;
+// 'G'
+$display ( "s = %s" , s );
+end // main
+endmodule // Guia_0105

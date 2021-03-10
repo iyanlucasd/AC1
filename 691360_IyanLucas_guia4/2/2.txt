@@ -1,0 +1,11 @@
+# 2
+
+a) x . (x'+y)'
+->
+*de Morgan* x . (x . y')
+->
+*associativa* 'y . (x . x)
+->
+*Idempotência* 'y . x
+
+b) 

@@ -1,0 +1,101 @@
+#! /usr/bin/vvp
+:ivl_version "10.1 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x55c62ffb6bd0 .scope module, "teste" "teste" 2 6;
+ .timescale 0 0;
+v0x55c62ffd76f0_0 .net "s", 0 0, L_0x55c62ffd7e50;  1 drivers
+v0x55c62ffd77b0_0 .var "x", 0 0;
+v0x55c62ffd7880_0 .var "y", 0 0;
+v0x55c62ffd7980_0 .var "z", 0 0;
+S_0x55c62ffb6d50 .scope module, "TABLE" "tabelaVerdade" 2 11, 2 1 0, S_0x55c62ffb6bd0;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "s"
+    .port_info 1 /INPUT 1 "x"
+    .port_info 2 /INPUT 1 "y"
+    .port_info 3 /INPUT 1 "z"
+L_0x55c62ffd7a50 .functor NOT 1, v0x55c62ffd7980_0, C4<0>, C4<0>, C4<0>;
+L_0x55c62ffd7af0 .functor NOT 1, v0x55c62ffd77b0_0, C4<0>, C4<0>, C4<0>;
+L_0x55c62ffd7bb0 .functor NOT 1, v0x55c62ffd7980_0, C4<0>, C4<0>, C4<0>;
+L_0x55c62ffd7c20 .functor OR 1, L_0x55c62ffd7af0, L_0x55c62ffd7bb0, C4<0>, C4<0>;
+L_0x55c62ffd7d90 .functor NOT 1, L_0x55c62ffd7c20, C4<0>, C4<0>, C4<0>;
+L_0x55c62ffd7e50 .functor AND 1, L_0x55c62ffd7a50, L_0x55c62ffd7d90, C4<1>, C4<1>;
+v0x55c62ffb6f90_0 .net *"_s0", 0 0, L_0x55c62ffd7a50;  1 drivers
+v0x55c62ffd6f90_0 .net *"_s2", 0 0, L_0x55c62ffd7af0;  1 drivers
+v0x55c62ffd7070_0 .net *"_s4", 0 0, L_0x55c62ffd7bb0;  1 drivers
+v0x55c62ffd7160_0 .net *"_s6", 0 0, L_0x55c62ffd7c20;  1 drivers
+v0x55c62ffd7240_0 .net *"_s8", 0 0, L_0x55c62ffd7d90;  1 drivers
+v0x55c62ffd7370_0 .net "s", 0 0, L_0x55c62ffd7e50;  alias, 1 drivers
+v0x55c62ffd7430_0 .net "x", 0 0, v0x55c62ffd77b0_0;  1 drivers
+v0x55c62ffd74f0_0 .net "y", 0 0, v0x55c62ffd7880_0;  1 drivers
+v0x55c62ffd75b0_0 .net "z", 0 0, v0x55c62ffd7980_0;  1 drivers
+    .scope S_0x55c62ffb6bd0;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c62ffd77b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c62ffd7880_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c62ffd7980_0, 0, 1;
+    %vpi_call 2 17 "$display", "x y z = s" {0 0 0};
+    %vpi_call 2 18 "$monitor", "%b %b %b = %b", v0x55c62ffd77b0_0, v0x55c62ffd7880_0, v0x55c62ffd7980_0, v0x55c62ffd76f0_0 {0 0 0};
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c62ffd77b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c62ffd7880_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c62ffd7980_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c62ffd77b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c62ffd7880_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c62ffd7980_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c62ffd77b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c62ffd7880_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c62ffd7980_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c62ffd77b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c62ffd7880_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c62ffd7980_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c62ffd77b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c62ffd7880_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c62ffd7980_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c62ffd77b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c62ffd7880_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55c62ffd7980_0, 0, 1;
+    %delay 1, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c62ffd77b0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c62ffd7880_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55c62ffd7980_0, 0, 1;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "1b.v";

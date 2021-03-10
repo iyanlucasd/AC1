@@ -1,0 +1,149 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Template de Artigo Adaptado para Trabalho de Diplomação do ICEI %%%%%%%%%%%%%%%%%%%%%%%%
+%% codificação UTF-8 - Abntex - Latex -  							     %%
+%% Autor:    Fábio Leandro Rodrigues Cordeiro  (fabioleandro@pucminas.br)                            %% 
+%% Co-autores: Prof. João Paulo Domingos Silva, Harison da Silva e Anderson Carvalho		     %%
+%% Revisores normas NBR (Padrão PUC Minas): Helenice Rego Cunha e Prof. Theldo Cruz                  %%
+%% Versão: 1.1     18 de dezembro 2015                                                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\esp Definir e Categorizar}
+\subsection{ASIC (Aplication Specific IC)}
+% Os ASICs ou CIs customizados, se caracterizam principalmente pela
+% necessidade de um processo de fabricação especial, que requer máscaras
+% específicas para cada projeto. Essa característica acarreta em altos custos de projeto
+% e um longo tempo de desenvolvimento para esse tipo de implementação, em caso de
+% grandes implementações esse alto custo é amortizado. 
+Os ASICs são circuitos integrados, analógico ou digital, que são feitos especificamente para algum propósito, desta forma eles são fabricados de forma específica, por isso tem um alto custo de projeto.
+Por ser produzido de forma específica e ele também precisa de um tempo muito grande de produção e implementação.
+Porém, por serem específicos, eles tem um desempenho muito alto e um baixo consumo de energia.
+
+
+
+\subsection{ASSP (Aplication-Specific Standard Parts)}
+São circuitos integrados similares aos ASIC, mas com uma função mais abrangente, visto que não são tão específicos por usarem partes padronizadas.
+Desta forma é usado em diferentes projetos, então o custo é menor, mas o consumo e desempenho são inferiores aos ASIC.
+
+% Circuitos integrados para uma aplicação específica padrão ASSPs (Application-specific standard parts) são projetados e implementados exatamente da mesma forma que ASICs.
+% Isto não é surpreendente, pois são essencialmente a mesma coisa.
+% A única diferença é que um ASSP é um dispositivo de propósito mais geral e é usado por diferentes sistemas em diferentes projetos.
+% Por exemplo, um chip de interface USB pode ser classificado como um ASSP.
+\subsection{SPLD (Simple PLD)}
+São circuitos lógicos baseados em portas OR/AND com um baixo custo e alto desempenho, podendo ter flip-flops na saída.
+As portas AND podem ser programadas, mas as OR são fixas.
+Podem ser de dois tipos:
+\begin{itemize}
+	\item Programmable Array Logic (PAL): São SPLDs geralmente programáveis somente uma vez
+	\item Generic Array Lociv (GAL): São SPLDs que podem ser reprogramáveis.
+\end{itemize}
+
+
+% baixo custo e alto desempenho
+% Capacidade reduzida
+\subsection{CPLD (Dispositivo de Lógica Programável Compléxa)}
+Um CPLD é um dispositivo lógico programável introduzido pela Altera Corp. composto por vários SPLDs em um único chip com uma interconexão programável entre eles.
+\par É um PLD que possui alta durabilidade, alta versatilidade com uma reconfiguração de até um milhão de vezes. 
+Além disso, é um PLD com um baixo custo comparado aos outros PLD.
+
+% Alta durabilidade mesmo em ambientes agressivos
+% Alta versatilidade, pode ser reconfigurado cerca de 1M vezes
+% Baixo custo
+\subsection{SOC (System-on-Chips)}
+Os SOCs são um sistema de chips de silício que contém um ou mais núcleos de microprocessadores, microcontroladores e processadores digitais de sinais.
+Podem ser incluídos outros "módulos" como memória, aceleradores, periféricos, entre outros.
+Se um ASIC ou um ASSP possui um ou mais processadores, então eles são um SOC.
+Ele oferece alto desempenho e baixo custo assim como um ASIC e ASSP.
+
+\subsection{FPGA (Field Programmable Gate Array)}
+Os FPGAs são uma matriz de células configuráveis conectados entre si por uma conexão também programável, podendo prover uma capacidade lógica elevada.
+Os primeiros foram feitos pela Xilinx Inc. em 1984, com duas linhas, a Spartan e Virtex, e possuia uma arquitetura simples, entretanto versões atuais já são mais complexas e possuem uma grande capacidade de configurações para o hardware desempenhar um grande leque de funções digitais.
+Possui um tempo de projeto reduzido e um custo mais baixo.
+Tem a possibilidade de implementar algorítmos paralelos, processando uma quantidade maior de dados de forma mais rápida e eficiente do que as SOC.
+
+
+% é um grande arranjo de celulas configuraveis em um chip
+% primeiro FPGA Xilinx inc. 1984
+% reduzido tempo de projeto e relativo baixo custo
+% blocos logicos , blocos I/O, chaves de interconexção
+\section{\esp Diferenciar}
+%  PROM & PLA & PAL \\
+\subsection{PROM (Programmable Read Only Memory)}
+É uma memória programável de só leitura, mas só pode ser programada uma vez, por causa do "rebentamento" dos fusíveis.
+A PROM sai de fábrica com todos os fusíveis saindo 1, depois que ocorre a queima programada, o fusível passa 0.
+Elas são utilizados para armazenamento permanente em programas, sendo largamente utilizadas em microcontroladores.
+
+\subsection{PLA (Programmable Logic Arrays)}
+Os Programmable Logic Arrays foi o primeiro dispositivo desenvolvido pra implementar funções logicas definidas.
+São feitos por "arrays" de portas AND e OR sendo que as duas são programáveis, fazendo ser muito versátil.
+Apesar disto o seu custo de projeto é elevado, usado em menor número.
+
+% Introduzido no mercado pela Philips na década de 70, o PLA (Programmable
+% Logic Array) foi o primeiro dispositivo desenvolvido para implementar funções lógicas
+% definidas. Um PLA é constituído por arranjos AND e OR, onde ambos são
+% programáveis. Por esse motivo o PLA é adequado para a implementação de funções
+% na forma de soma de produtos, sendo muito versátil, pois tanto os arranjos AND
+% como os OR podem ter muitas entradas. Porém, ela não foi bem aceita pelos
+% projetistas pelo seu alto custo.
+% A PLA possui ambos os planos programáveis.
+
+\subsection{PAL (Programmable Array Logic)}
+São SPLDs geralmente programáveis somente uma vez com um "array" de OR fixo.
+São simples de fabricar, baratos e possuem alto desempenho.
+
+\subsection{Comparativo}
+\begin{center}
+	\centering
+	 \textbf{Quadro 1 - PAL x PLA}\\
+% 	\vspace{-0.3cm} % espaço entre titulo e tabela
+  \label{quadro1}
+  \begin{tabular}{|c|c|c|} \hline
+	\multicolumn{1}{|c|}{\textbf{}} &	\multicolumn{1}{|c|}{\textbf{PAL}} & \multicolumn{1}{|c|}{\textbf{PLA}} \\ 	  
+  \hline \textbf{Porta AND programável} & NÃO & SIM\\ 
+   \hline \textbf{Porta OR programável}  & SIM & SIM \\ 
+  \hline \textbf{Custo} & BARATO & CARO \\ 
+  \hline \textbf{Desempenho} & ALTO & ALTO \\ 
+  \hline \textbf{Versátil} & NÃO & SIM \\ 
+  \hline \textbf{Reprogramável} & SIM & NÃO \\ 
+  \hline
+\end{tabular}
+\vspace{0.1cm} 
+{\footnotesize\\ \textbf{Fonte: Dados da pesquisa}}
+\end{center}
+
+
+\section{\esp CLPD x FPGA}
+Ambos os circuitos eletrônicos são usados amplamente na indústria, entretanto pequenos detalhes os diferenciam e tornam cada um melhor em certas situações.
+Os CPLDs são excelentes escolhas quando o sistema é pequeno, ou precisa de respostas mais rápidas sem muita versatilidade.
+Entretanto, quando o sistema toma proporções maiores, a escolha boa é o FPGA, visto que ele pode oferecer mais conexões, sendo um \textit{jack of all trades}. 
+Porém, pelo seu custo elevado, dependendo do módulo, pode se utilizar ambos, em um sistema misto, o que seria ótimo, visto que o CLPD pode oferecer rapidez e custo mais baixo, enquanto o FPGA pode desenvolver múltiplas funções específicas, deixando os Trabalhos mais ordinários para os CLPDs.
+Em suma, utilizar vários CLPDs e situacionais FPGAs traz um balanço de custo benefício e desempenho interessante para o sistema.\\
+\begin{minipage}{\textwidth}
+\begin{center}
+\textbf{Quadro 2 - CLPD x FPGA}\\
+% 	\vspace{-0.3cm} % espaço entre titulo e tabela
+  \label{quadro2}
+  \begin{tabular}{|c|c|c|} \hline
+	\multicolumn{1}{|c|}{\textbf{}} &	\multicolumn{1}{|c|}{\textbf{CLPD}} & \multicolumn{1}{|c|}{\textbf{FPGA}} \\ 	  
+  \hline \textbf{Módulos Lógicos} & PAL, GAL, PLA & CLB, IOB, \textit{Switch Matrix}\footnote{Muito menores que os módulos do CLPD} \\ 
+   \hline \textbf{Memória}  & Não-volátil (Flash ou EEPROM) & Volátil (Baseado em RAM)\footnote{Modelos mais recentes já possuem memória não-volátil, apesar de serem bem específicos e caros utilizando EEPROM ou baseados em flash.} \\ 
+   \hline \textbf{Blocos lógicos} & Até 10.000 & Até 100.000 \\ 
+   \hline \textbf{Delay} &Determinístico e Menor\footnote{CLPDs são simples e possuem menos conectores, por isso, possui menor tempo de análise de delay }& Não determinístico\footnote{Pelo FPGA ter uma natureza complexa, os vários módulos e o tamanho podem tornar a predição do delay praticamente não determinística. Entretanto já possuem módulos caros fornecidos por fabricantes que auxiliam nessa tarefa. }\\ 
+  \hline \textbf{\textit{Idle Power}} & Baixo & Alto \\ 
+  \hline \textbf{Reprogramável} & Sim\footnote{ Porém tem que rebootar o circuito e reconfigurá-lo }& Sim\footnote{ Pode reconfigurar enquanto o processo está rodando, não necessita de rebootar }\\ 
+  \hline
+\end{tabular}
+\vspace{0.1cm} 
+{\footnotesize\\ \textbf{Fonte: Dados da pesquisa}}
+\end{center}
+\end{minipage}
+
+% pra mudar o cirquito ou fazer alteração o FPGA pode fazer isso até rodando, o CLPD precisa desligar, etc.
+% FPGA caro para projetos simples CLPD barato
+% FPGA não dá pra predizer o delay mas o CLPD tem um delay muito baixo por isso é melhor pra sincronização de data paralela 
+% idle power consumption menor no cpdl maior no FPGA
+% CPLD tem memória não volatil / FPGA tem memória voláril (novos modelos tem memória não volátil)
+% CPLD é melhor para cirquitos pequenos
+% FPGA pode ter até 100.000 blocos lógicos, enquanto CLPD pode ter até 10.000
+% FPGA não usa PAL, GAL, PLA. no lugar usa modulos logicos muito menores com uma interconexção programável pra conectar dentro do bloco logico configurável.
+
+
+

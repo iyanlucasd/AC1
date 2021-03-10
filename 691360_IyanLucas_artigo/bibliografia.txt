@@ -1,0 +1,74 @@
+Iyan Lucas Duarte Marques
+matrícula: 691360
+
+Oi Theldo! 
+É o Iyan falando, visto que você não me respondeu no Canvas a mensagem que eu te enviei,
+pensei em te mandar por aqui mesmo. 
+Referente ao trabalho que o sr. designou, a respeito do artigo, no template latex que está
+no guia está com um erro no Biblitex que inviabiliza o uso de referências no pdf.
+Então, eu vou colocar as referências aqui, espero que o senhor entenda! Mil perdões!
+
+/* 
+* se quiser, eu posso re-enviar o trabalho com as referências certinhas no PDF, mas faz 3
+* dias que eu não consigo resolver o erro ;-;
+* as que eu consegui formatar, eu escrevi no formato!
+*/
+
+*REFERENCIAS*
+
+FREITAS,  Tiago  Tobias;  PASQUALINOTO,  Thiago  Luiz;  LEãO,  Juliano  Carlos.
+O  CPLD(Dispositivo Complexo de Lógica Programação aplicado em automação industrial*. 
+2005.51f. Monografia (Conclusão de curso) — 
+Centro de Treinamento SENAI/Lençóis Paulista-SP,Guanhães.
+
+PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS.
+Padrão PUC Minas deNormalização:  normas da ABNT para apresentação de teses, dissertações, monografias e tra-balhos acadêmicos. 
+9. ed. rev. ampl. atual. Belo Horizonte: PUC Minas, 2012. 
+Disponível em:<http://www.pucminas.br/biblioteca/>. Acesso em: 6 de set. 2013.
+
+Departamento de Engenharia Elétrica e de Computação
+SEL 405 – Lab. de Introdução aos Sistemas Digitais I
+Profa. Luiza Maria Romeiro Codá
+“DISPOSITIVOS LÓGICOS PROGRAMÁVEIS”
+Disponível em:<https://edisciplinas.usp.br/pluginfile.php/5314894/mod_resource/content/1/DISPOSITIVOS LÓGICOS PROGRAMÁVEIS_2020.pdf>. 
+Acesso em: 11 de out. 2020.
+
+CASTELANO PRADO, André
+Embarcados
+Qual a diferença entre ASIC, ASSP, SoC e FPGA?
+Disponível em:<https://www.embarcados.com.br/asic-assp-soc-fpga/>. 
+Acesso em: 11 de out. 2020.
+
+BROWN, Stephen; ROSE, Jonathan 
+Architecture of FPGAs and CPLDs: A Tutorial
+Department of Electrical and Computer Engineering
+University of Toronto
+Disponível em:<https://www.eecg.utoronto.ca/~jayar/pubs/brown/survey.pdf>. 
+Acesso em: 11 de out. 2020.
+
+@article{article,
+author = {Brown, Stephen and Rose, Julie},
+year = {2002},
+month = {09},
+pages = {},
+title = {Architecture of FPGAs and CPLDs: A tutorial},
+volume = {13},
+journal = {IEEE Design and Test of Computers}
+}
+
+Numato Lab
+CPLD vs FPGA: Differences between them and which one to use?
+Disponível em:<https://numato.com/kb/cpld-vs-fpga-differences-one-use/>. 
+Acesso em: 11 de out. 2020.
+
+Cadence PBC Solutions
+CPLD vs. FPGA: Which Do You Need For Your Digital System?
+Disponível em:<https://resources.pcb.cadence.com/blog/2019-cpld-vs-fpga-which-do-you-need-for-your-digital-system#:~:text=In>. 
+Acesso em: 11 de out. 2020.
+
+P. SILVA, Gabriel 
+Dispositivos Lógicos Programáveis Circuitos Lógicos
+DCC-IM/UFRJ
+Disponível em:<https://dcc.ufrj.br/~gabriel/circlog/DispLogPro.pdf>. 
+Acesso em: 11 de out. 2020.
+
